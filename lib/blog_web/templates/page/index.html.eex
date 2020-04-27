@@ -1,0 +1,4 @@
+<h1>Posts</h1>
+<%= for post <- @posts do %>
+  <%= link post.title, to: Routes.page_path(@conn, :show, post) %>
+<% end %>
